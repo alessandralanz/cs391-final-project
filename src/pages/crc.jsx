@@ -1,6 +1,8 @@
-import Navbar from "../components/navbar.jsx";
-import Threecard from "../components/threecard.jsx";
+import React from "react";
 import styled from "styled-components";
+import Threecard from "../components/threecard.jsx";
+
+
 const Container = styled.div`
   display: flex;
   flex-direction: row;
@@ -8,7 +10,6 @@ const Container = styled.div`
 function Crc(){
     return(
         <>
-        <Navbar/>
             <Container>
                 <Threecard title="Marciano Commons"/>
                 <Threecard title="Warren"/>
