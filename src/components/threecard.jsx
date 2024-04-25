@@ -1,4 +1,16 @@
 import styled from 'styled-components';
+import { ScrollRotate } from 'react-scroll-rotate';
+import ramen from '/public/ramen.png';
+
+function Ramen() {
+    return (
+        <div>
+            <ScrollRotate>
+                <img src={ramen} alt="ramen bowl with chop sticks" style={{width: '80px', height: 'auto'}}/>
+            </ScrollRotate>
+        </div>
+    );
+}
 
 
 const Card = styled.div`
@@ -11,32 +23,38 @@ const Card = styled.div`
     flex-direction: column;
     align-items: center;
     width: 80%;
+    font-family: 'Open Sans', sans-serif;
 `;
 
 const Title = styled.h1`
-  font-size: 24px;
-  color: #2a2a2a;
+    font-size: 24px;
+    color: #2a2a2a;
     text-align: left;
+    font-family: 'Open Sans', sans-serif;
 `;
 const Schedule = styled.div`
     text-align: left;
     width: 100%;
+    font-family: 'Open Sans', sans-serif;
 `;
 
 const DayGroup = styled.h2`
-  font-size: 20px;
-  color: #1a1a1a;
-  margin-top: 15px;
+    font-size: 20px;
+    color: #1a1a1a;
+    margin-top: 15px;
+    font-family: 'Open Sans', sans-serif;
 `;
 
 const TimeSlot = styled.p`
-  font-size: 16px;
-  color: #4a4a4a;
-  margin-left: 20px;
+    font-size: 16px;
+    color: #4a4a4a;
+    margin-left: 20px;
+    font-family: 'Open Sans', sans-serif;
 `;
 function Threecard({title}){
     return(
         <Card>
+            <Ramen />
             <Title>{title}</Title>
             <Schedule>
                 <DayGroup>Monday-Friday</DayGroup>
