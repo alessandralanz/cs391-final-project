@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { ScrollRotate } from 'react-scroll-rotate';
 import ramen from '/public/ramen.png';
-
+// Extra Credit Component
 function Ramen() {
     return (
         <div>
@@ -12,7 +12,8 @@ function Ramen() {
     );
 }
 
-
+// Component Contributor: Aditya Chowdhri
+// Creating the outer card which matches the styling of all other components
 const Card = styled.div`
     background-color: #f8f8f8;
     border-radius: 8px;
@@ -51,25 +52,23 @@ const TimeSlot = styled.p`
     margin-left: 20px;
     font-family: 'Open Sans', sans-serif;
 `;
-function Threecard({title}){
+// Named threecard as it is one of the three cards on the CRC page
+// For ease of generalization many variables are passed through
+function Threecard({title,breakfastWkd, lunchWkd, dinnerWkd,breakfastWke, lunchWke, dinnerWke}){
     return(
         <Card>
+            {/*Extra credit component is Ramen*/}
             <Ramen />
             <Title>{title}</Title>
             <Schedule>
                 <DayGroup>Monday-Friday</DayGroup>
-                <TimeSlot>Breakfast: 7:00 AM - 10:00 AM</TimeSlot>
-                <TimeSlot>Continental Breakfast: 10:00 AM - 11:00 AM</TimeSlot>
-                <TimeSlot>Lunch: 11:30 AM - 2:00 PM</TimeSlot>
-                <TimeSlot>Light Lunch (Deli, Pizza, Grill, Soup & Salad): 2:00 PM - 4:30 PM</TimeSlot>
-                <DayGroup>Monday-Thursday</DayGroup>
-                <TimeSlot>Dinner: 4:30 PM - 8:00 PM</TimeSlot>
-                <TimeSlot>Light Dinner (Global, Deli, Grill, Soup & Salad): 8:00 PM - 10:00 PM</TimeSlot>
+                <TimeSlot>Breakfast: {breakfastWkd}</TimeSlot>
+                <TimeSlot>Lunch: {lunchWkd}</TimeSlot>
+                <TimeSlot>Dinner: {dinnerWkd}</TimeSlot>
                 <DayGroup>Saturday-Sunday</DayGroup>
-                <TimeSlot>Brunch: 10:00 AM - 1:00 PM</TimeSlot>
-                <TimeSlot>Light Lunch (Deli, Pizza, Grill, Soup & Salad): 1:00 PM - 4:30 PM</TimeSlot>
-                <DayGroup>Friday-Sunday</DayGroup>
-                <TimeSlot>Dinner: 4:30 PM - 7:30 PM</TimeSlot>
+                <TimeSlot>Breakfast: {breakfastWke}</TimeSlot>
+                <TimeSlot>Lunch: {lunchWke}</TimeSlot>
+                <TimeSlot>Dinner: {dinnerWke}</TimeSlot>
             </Schedule>
         </Card>
     );
