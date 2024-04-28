@@ -3,7 +3,7 @@ import React from 'react';
 import { ScrollRotate } from 'react-scroll-rotate';
 import plate from '/public/plate.png';
 import salad from '/public/salad.png'
-
+//Extra credit component
 function PlateImage() {
     return (
         <div>
@@ -13,7 +13,7 @@ function PlateImage() {
         </div>
     );
 }
-
+//Extra credit component
 function SaladImage() {
     return (
         <div>
@@ -24,10 +24,11 @@ function SaladImage() {
     );
 }
 
+// Component Contributor: Andrew Cabral
 const CardWrapper = styled.div`
     display:flex;
 `
-
+//Creating the left card and matching the styling of the other components
 const Card = styled.div`
     background-color: #ffffff;
     border-radius: 15px;
@@ -38,19 +39,6 @@ const Card = styled.div`
     flex-direction: column;
     align-items: center;
     width: 30%;
-    font-family: 'Open Sans', sans-serif;
-`;
-
-const CardTwo = styled.div`
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 2%;
-    margin: 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 60%;
     font-family: 'Open Sans', sans-serif;
 `;
 
@@ -75,6 +63,20 @@ const Stats = styled.p`
     font-size: 12px;
     color: #4a4a4a;
     margin-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+`;
+
+//creating the right card and matching the styling of the other components
+const CardTwo = styled.div`
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2%;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
     font-family: 'Open Sans', sans-serif;
 `;
 
@@ -103,7 +105,7 @@ const ReviewText = styled.p`
     margin-bottom: 20px;
     font-family: 'Open Sans', sans-serif;
 `;
-
+// The function home displays both card and card2
 export default function Home() {
 
     return (
