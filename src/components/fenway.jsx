@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ScrollRotate } from 'react-scroll-rotate';
-import pizza from '/public/pizza.png';
+import pizza from '/pizza.png';
 
+//Extra credit component
 function Pizza() {
     return (
         <div>
@@ -13,6 +14,7 @@ function Pizza() {
     );
 }
 
+// Component Contributor: Alessandra Lanz
 const PageContainer = styled.div`
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -21,6 +23,7 @@ const PageContainer = styled.div`
     align-items: center;
 `;
 
+//Creating the main center card so that it matches the styling of the other pages
 const Card = styled.div`
     background-color: #f8f8f8;
     border-radius: 8px;
@@ -33,6 +36,8 @@ const Card = styled.div`
     font-family: 'Open Sans', sans-serif;
 `;
 
+//Creating a container to hold the extra credit component so that the page styling appears are desired
+//Made so that the images displayed do not interfere with the header text and instead create a border
 const PizzaContainer = styled.div`
     display: flex;
     flex-direction: row;
@@ -63,6 +68,8 @@ const TimeSlot = styled.p`
     font-family: 'Open Sans', sans-serif;
 `;
 
+// The function FenwayDinningHallCard displays Card
+// The extra credit component PizzaImage is also called
 const FenwayDiningHallCard = () => (
     <PageContainer>
     <Card>

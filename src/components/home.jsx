@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import React from 'react';
 import { ScrollRotate } from 'react-scroll-rotate';
-import plate from '/public/plate.png';
-import salad from '/public/salad.png'
+import plate from '/plate.png';
+import salad from '/salad.png'
 //Extra credit component
 function PlateImage() {
     return (

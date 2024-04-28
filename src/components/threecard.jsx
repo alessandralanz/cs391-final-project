@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { ScrollRotate } from 'react-scroll-rotate';
-import ramen from '/public/ramen.png';
+import ramen from '/ramen.png';
 // Extra Credit Component
 function Ramen() {
     return (
