@@ -106,6 +106,7 @@ const ReviewText = styled.p`
     font-family: 'Open Sans', sans-serif;
 `;
 // The function home displays both card and card2
+// The extra credit components PlateImage and SaladImage are also called
 export default function Home() {
 
     return (
