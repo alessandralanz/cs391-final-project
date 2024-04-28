@@ -1,3 +1,4 @@
+//Styling for the home page, which contains dining hall reviews and mealplan information
 import styled from 'styled-components';
 import React from 'react';
 import { ScrollRotate } from 'react-scroll-rotate';
@@ -42,6 +43,7 @@ const Card = styled.div`
     font-family: 'Open Sans', sans-serif;
 `;
 
+//The title and subheaders of the left card
 const Title = styled.h1`
     font-size: 40px;
     color: #2a2a2a;
@@ -79,7 +81,7 @@ const CardTwo = styled.div`
     width: 60%;
     font-family: 'Open Sans', sans-serif;
 `;
-
+//The title and subheaders of the right card
 const SubHeader = styled.h1`
     font-size: 25px;
     color: black;

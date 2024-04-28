@@ -1,7 +1,11 @@
+//The navbar is used to navigate between the pages
+
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
+//Component Contributors: Andrew Cabral, Alessandra Lanz
 
+//Navbar wrapper which covers the top of the screen
 const NavBarWrapper = styled.div`
     background-color: rgba(255, 0, 0, 0.87);
     width: 100%;
@@ -14,6 +18,7 @@ const NavBarWrapper = styled.div`
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 `;
 
+//Title of the navbar
 const Title = styled.h1`
     margin: 10px 20px 0 0; 
     color: black;
@@ -22,7 +27,7 @@ const Title = styled.h1`
     align-items: center;
     font-family: 'Open Sans', sans-serif;
 `;
-
+//container determining placement of the buttons
 const ButtonContainer = styled.div`
     display: flex;
     flex-direction: row;
@@ -32,7 +37,7 @@ const ButtonContainer = styled.div`
     margin-bottom: 15px;
 `;
 
-
+//The button for each of the pages
 const NavLink = styled(Link)`
     text-decoration: none;
     color: black;
@@ -48,6 +53,7 @@ const NavLink = styled(Link)`
         transform: scale(1.05);
 `;
 
+//A funtion which creates a red bar at the top of the screen with a title and 3 buttons for each of the 3 pages.
 function NavBar() {
     return (
         <>
