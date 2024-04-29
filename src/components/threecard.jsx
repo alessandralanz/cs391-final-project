@@ -52,8 +52,8 @@ const TimeSlot = styled.p`
     margin-left: 20px;
     font-family: 'Open Sans', sans-serif;
 `;
-// Named threecard as it is one of the three cards on the CRC page
-// For ease of generalization many variables are passed through
+// Named threecard as it serves as one of the three cards on the CRC page
+// For ease of generalization many variables are passed through to change info based on the actual dining hall
 function Threecard({title,breakfastWkd, lunchWkd, dinnerWkd,breakfastWke, lunchWke, dinnerWke}){
     return(
         <Card>
